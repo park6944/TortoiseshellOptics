@@ -74,10 +74,6 @@ header {
     margin-top: 10rem;
 }
 
-.banner > .container {
-    /*    width: 1032px;*/
-}
-
 .banner-label {
     display: flex;
     justify-content: flex-end;
@@ -137,7 +133,6 @@ img.paper {
 .info {
     display: flex;
     flex-direction: column;
-/*    align-items: center;*/
     width: 35%;
     padding-left: 5%;
 }
@@ -166,7 +161,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     padding: 4rem;
-/*    border: 2px solid red;*/
+    /*    border: 2px solid red;*/
 }
 
 .logo2 {
@@ -175,25 +170,141 @@ footer {
 }
 
 
+/*Tablet Style (1024px)*/
+
+@media only screen and (max-width: 1024px) {
+    header {
+        height: 22rem;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .banner {
+        margin-top: 5rem;
+    }
+
+    .banner-label span {
+        font-size: 1.33rem;
+        font-weight: bold;
+        padding: 0.75rem 4rem;
+        margin-right: 2rem;
+        line-height: 2.4rem;
+    }
+}
 
 
+/*Mobile Style (470px)*/
 
+@media only screen and (max-width: 560px) {
+    header {
+        height: 17rem;
+        width: 100%;
+        padding-top: 0;
+        background-position: 20%;
+    }
 
+    .logo span {
+        display: none;
+    }
 
+    .nav1 {
+        display: none;
+    }
 
+    .nav2 {
+        display: block;
+        padding: 1rem 2rem;
+    }
 
+    .banner {
+        margin-top: 9rem;
+    }
 
+    .banner-label span {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1rem 0rem;
+        width: 100%;
+        margin-right: 0;
+        line-height: 1;
+        text-align: center;
+    }
 
+    .images {
+        display: flex;
+        flex-direction: column;
+        margin: 3.77rem 0;
 
+    }
 
+    .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        /*    border: 2px solid red;*/
+    }
 
+    .ruler,
+    .truck {
+        margin-top: 1.54rem;
+    }
 
+    .img-label {
+        font-size: 0.77rem
+    }
 
+    .corp-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+        font-size: 0.77rem;
+    }
 
+    .info-label {
+        font-size: 1rem;
+        font-weight: bold;
+        width: 100%;
+        background-color: cadetblue;
+        padding: 0.5rem 0 0.5rem;
+        margin-bottom: 1rem;
+        color: white;
+        text-align: center;
+    }
 
+    .ph-discription {
+        margin-bottom: 4rem;
+    }
 
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
 
+    .footer {
+        background-color: azure;
+        display: flex;
+        justify-content: center;
+        padding: 4rem 0;
+        width: 100%
+        /*    border: 2px solid red;*/
+    }
 
+    .logo2 {
+        height: 1.5rem;
+        margin-right: 1rem;
+    }
 
-
+    .copyright {
+        display: none;
+    }
+}
